@@ -7,6 +7,7 @@ System.out.println("Welcome to emp wage computation program on master branch");
 Random rand= new  Random();
 final int fullDayTime = 8;
 int presentOrAbsent = rand.nextInt(2) ;
+int partTimeORfullTime = rand.nextInt(2) ;
 int dailyWorkHours= rand.nextInt(9) ;
 if(presentOrAbsent==1) {
 System.out.println("employ is Present");
@@ -14,6 +15,12 @@ System.out.println("This employ's totel working hour is :-"+dailyWorkHours+" so 
 }
 else 
 	System.out.println("Employ is absent");
+//new feature parttime or full time
+if(partTimeORfullTime==1) {
+	System.out.println("Employ is part time ");
+}
+else System.out.print("employ is full time ");
+
 }
 }
 
